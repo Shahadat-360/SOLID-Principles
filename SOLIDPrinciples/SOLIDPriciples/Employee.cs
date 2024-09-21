@@ -8,11 +8,6 @@ namespace SOLIDPriciples
 {
     public class Employee
     {
-        public double CalculatePay(Employee employee)
-        {
-            throw new NotImplementedException();
-        }
-
         public void Save(Employee employee) 
         {
             try
@@ -24,11 +19,6 @@ namespace SOLIDPriciples
                 Logger logger = new Logger();
                 logger.LogError(ex.Message);
             }
-        }
-
-        public void ReportHours(Employee employee) 
-        {
-            throw new NotImplementedException();
         }
     }
 }

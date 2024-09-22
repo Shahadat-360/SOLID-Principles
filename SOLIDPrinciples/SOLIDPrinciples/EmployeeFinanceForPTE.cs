@@ -12,5 +12,10 @@ namespace SOLIDPrinciples
         {
             return employee.TotalHoursWorked * 5;
         }
+
+        public override double CalculateRewards(Employee employee)
+        {
+            return 150;
+        }
     }
 }

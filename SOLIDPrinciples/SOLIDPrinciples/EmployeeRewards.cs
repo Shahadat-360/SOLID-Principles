@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace SOLIDPrinciples
 {
-    public class EmployeeFinanceForContractor:EmployeeRewards
+    public class EmployeeRewards
     {
-        public override double CalculateRewards(Employee employee)
+        public virtual double CalculateRewards(Employee employee)
         {
-            return 120;
+            return 0;
         }
     }
 }

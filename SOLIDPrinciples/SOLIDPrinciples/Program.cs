@@ -6,3 +6,4 @@ Employee employee2 = new Employee() { EmployeeType = empType.HalfTime.ToString()
 
 EmployeeFinances employeeFinances = new EmployeeFinanceForFTE();
 Console.WriteLine(employeeFinances.CalculatePay(employee));
+Console.WriteLine(employeeFinances.CalculateRewards(employee));

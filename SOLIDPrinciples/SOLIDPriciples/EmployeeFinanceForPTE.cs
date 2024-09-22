@@ -3,15 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static SOLIDPriciples.Employee;
 
 namespace SOLIDPriciples
 {
-    public class EmployeeFinances
+    public class EmployeeFinanceForPTE:EmployeeFinances
     {
-        public virtual double CalculatePay(Employee employee)
+        public override double CalculatePay(Employee employee)
         {
-            return 10;
+            return employee.TotalHoursWorked * 5;
         }
     }
 }

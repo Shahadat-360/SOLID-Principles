@@ -8,6 +8,8 @@ namespace SOLIDPriciples
 {
     public class Employee
     {
+        public string EmployeeType {  get; set; }
+        public double TotalHoursWorked {  get; set; }
         public void Save(Employee employee) 
         {
             try
@@ -19,6 +21,12 @@ namespace SOLIDPriciples
                 Logger logger = new Logger();
                 logger.LogError(ex.Message);
             }
+        }
+
+        public enum empType
+        {
+            FullTime,
+            HalfTime
         }
     }
 }

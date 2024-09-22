@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SOLIDPriciples
+namespace SOLIDPrinciples
 {
-    public class EmployeeFinanceForContractor:EmployeeFinances
+    public class EmployeeFinanceForFTE:EmployeeFinances
     {
         public override double CalculatePay(Employee employee)
         {
-            return 100;
+            return employee.TotalHoursWorked * 10;
         }
     }
 }

@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace SOLIDPrinciples
 {
-    public class Logger:ILogger
+    public class DatabaseLogger : ILogger
     {
         public void LogError(string message)
         {
-            File.WriteAllText("log.txt",message);
+            Console.WriteLine("Logging into Database Successfully");
         }
     }
 }

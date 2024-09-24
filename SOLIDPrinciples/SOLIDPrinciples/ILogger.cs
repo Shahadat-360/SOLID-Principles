@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace SOLIDPrinciples
 {
-    public class Logger:ILogger
+    public interface ILogger
     {
-        public void LogError(string message)
-        {
-            File.WriteAllText("log.txt",message);
-        }
+        void LogError(string message);
     }
 }

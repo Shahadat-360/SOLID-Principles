@@ -7,13 +7,13 @@ using static SOLIDPrinciples.Employee;
 
 namespace SOLIDPrinciples
 {
-    public class EmployeeFinances:EmployeeRewards
+    public class EmployeeFinances:IEmployeeFinances
     {
-        public virtual double CalculatePay(Employee employee)
+        public double CalculatePay(Employee employee)
         {
             return 10;
         }
-        public override double CalculateRewards(Employee employee)
+        public double CalculateRewards(Employee employee)
         {
             return 200;
         }

@@ -6,16 +6,21 @@ using System.Threading.Tasks;
 
 namespace SOLIDPrinciples
 {
-    public class EmployeeFinanceForPTE:IEmployeeFinances
+    public class EmployeeFinanceForCLevel : IStockOptions
     {
         public double CalculatePay(Employee employee)
         {
-            return employee.TotalHoursWorked * 5;
+            return employee.TotalHoursWorked * 12;
         }
 
         public double CalculateRewards(Employee employee)
         {
-            return 150;
+            return 250;
+        }
+
+        public double CalculateStockOptions(Employee employee)
+        {
+            return 30;
         }
     }
 }

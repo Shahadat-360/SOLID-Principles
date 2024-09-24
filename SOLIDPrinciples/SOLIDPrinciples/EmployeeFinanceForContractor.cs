@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace SOLIDPrinciples
 {
-    public class EmployeeFinanceForContractor:EmployeeRewards
+    public class EmployeeFinanceForContractor:IEmployeeRewards
     {
-        public override double CalculateRewards(Employee employee)
+        public double CalculateRewards(Employee employee)
         {
             return 120;
         }

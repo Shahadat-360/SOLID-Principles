@@ -26,7 +26,9 @@ namespace SOLIDPrinciples
         public enum empType
         {
             FullTime,
-            HalfTime
+            HalfTime,
+            Contractor,
+            CLevel
         }
     }
 }

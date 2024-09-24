@@ -6,11 +6,16 @@ using System.Threading.Tasks;
 
 namespace SOLIDPrinciples
 {
-    public class EmployeeFinanceForFTE:EmployeeFinances
+    public class EmployeeFinanceForFTE:IEmployeeFinances
     {
-        public override double CalculatePay(Employee employee)
+        public double CalculatePay(Employee employee)
         {
             return employee.TotalHoursWorked * 10;
+        }
+
+        public double CalculateRewards(Employee employee)
+        {
+            return 200;
         }
     }
 }
